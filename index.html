@@ -1,34 +1,25 @@
 <html>
 <HEAD>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- <meta http-equiv="X-UA-Compatible" content="IE=9"> --> 
-
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Full-Stack Simulation Framework for Cryogenic, Superconductor, and Fault-Tolerant Quantum Computing</title>
-<!-- InstanceEndEditable -->
-
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=9"> -->  
+<!-- InstanceBeginEditable name="doctitle" --><title>Full-Stack Simulation Framework for Cryogenic, Superconductor, and Fault-Tolerant Quantum Computing</title><!-- InstanceEndEditable -->
 <!-- 
 margin when four values are specified: top right bottom left 
 -->
 
 <style type="text/css">
         * { margin: 10px; padding: 0px; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; }
-        .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { float: left; margin: 0 20 0 30; }
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; line-height: 42px; border-bottom: 1px solid #999; }
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 10px 30px 5px 20px; font-size: 20px; line-height: 30px; text-indent: -10px; max-width: 1500; text-align: left;}
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }             p { margin: 10px 30px 5px 20px; font-size: 20px; line-height: 30px; text-indent: -10px; max-width: 1500; text-align: left;}
         li {max-width: 1500; text-align: left;}
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }        a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 32px 45px; }
         #objective { width: 500px; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-		li {margin: 10px 5px 5px 0px; font-size: 20px }
+        li {margin: 10px 5px 5px 0px; font-size: 20px }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
      </style>
@@ -37,40 +28,44 @@ margin when four values are specified: top right bottom left
 A:link, A:visited, {
 color:#000099;
 text-decoration: none
-}
-A:hover {
-	color: #336633;
-	text-decoration: underline;
-color:#3333CC  color: #FF00FF;
-}
-A:active {
-	color: #FF9900;
-	text-decoration: none
+    color: #FF9900;
 }
 </style>
 -->
-<meta name="description" content="Eastlake Duplicate Bridge Club - lessons workshops and play duplicate bridge in an acbl sanctioned bridge club San Diego County in Eastlake Chula Vista .  Receive hand records after each game">
+
+<style>
+.center {
+margin: auto;
+padding: 10px;
+max-width: 1500;
+},
+</style>
+
+<style>
+center_img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+max-width: 1500;
+}
+</style>
 
 </HEAD>
 
 <!-- InstanceBeginEditable name="head" -->
 
-<br>
-
-<BODY BGCOLOR= "#FFFFFF" >
-
 
 <br>
+<div>
+ <img src="images/overview.png" alt="tool_overview" style="display: block; margin-left: auto; margin-right: auto; width: 90%; max-width: 1500;"/><br><br>
+</div>
 
-<div class="header">
-
-<CENTER>
-  <img src="images/overview.png" width=1200 alt="logo"/><br><br> 
+<div class="header" style="text-align: center;">
 <h1> Full-Stack Simulation Framework for Cryogenic,<br>Superconductor, and Fault-Tolerant Quantum Computing </h1> <br>
 </div>
 
-<div>
-<CENTER>
+<div class="center">
 <p>
 <br>
 High-performance computing and data center industries always require the fastest and most power-efficient computer systems. However, facing the end of single-thread and multi-thread performance scaling, computer architects now suffer from critical challenges to further improve the performance and power efficiency with conventional room-temperature computing. To resolve the problems, our research mainly focuses on (1) 77K CMOS-based cryogenic computing, (2) 4K superconductor-based computing, and (3) mK qubit-based quantum computing, because they can maximize the performance of conventional computers (i.e., cryogenic/superconducting computing), or completely change the computing paradigm (i.e., quantum computing). For five years of collaboration between SNU, Kyushu, Nagoya University and industries (e.g., Samsung, SK Hynix), we developed the design-space exploration frameworks for those emerging computing paradigms, and proposed novel microarchitectures for various hardware units (e.g., 77K DRAM, cache, core, NoC / 4K core, NPU / quantum-control processor for quantum computers).
@@ -80,8 +75,7 @@ In this tutorial, we will introduce a series of our design/modeling tools for de
 <br>
 </div>
 
-<div>
-<CENTER>
+<div class="center">
 <p>
 <b>CryoModel: Cryogenic CMOS copmuter modeling tools</b><br>
 Cryogenic computing, which runs CMOS devices at extremely low temperature is highly promising thanks to its significant reduction of wire resistance as well as leakage current.
@@ -92,8 +86,8 @@ Our use cases will present our cryogenic-optimized architectures published in IS
 <br>
 </div>
 
-<div>
-<CENTER>
+
+<div class="center">
 <p>
 <b>Superconductor-based computer design and modeling tools</b><br>
 FILLME fillme
@@ -101,23 +95,21 @@ FILLME fillme
 <br>
 </div>
 
-<div>
-<CENTER>
+<div class="center">
 <p>
 <b>XQsim: Fault-tolerant quantum control processor modeling tools</b><br>
-10+K qubit fault-tolerant quantum computer is essential to achieve a true sense of quantum supremacy. 
-With the recent effort toward the large-scale quantum computer, architects have revealed various scalability issues in a quantum control processor. 
-However, it has been impossible to identify and resolve the processor's scalability bottleneck due to the absence of a reliable tool. 
+10+K qubit fault-tolerant quantum computer is essential to achieve a true sense of quantum supremacy.
+With the recent effort toward the large-scale quantum computer, architects have revealed various scalability issues in a quantum control processor.
+However, it has been impossible to identify and resolve the processor's scalability bottleneck due to the absence of a reliable tool.
 <br>
-To resolve the challenge, we developed XQsim, an open-source cross-technology quantum control processor simulator. 
-This tutorial session will introduce XQsim's detailed usage and capability with several hands-on experiences. 
-Our tutorial will cover microarchitecture, temperature, and technology exploration presented in ISCA 2022. 
+To resolve the challenge, we developed XQsim, an open-source cross-technology quantum control processor simulator.
+This tutorial session will introduce XQsim's detailed usage and capability with several hands-on experiences.
+Our tutorial will cover microarchitecture, temperature, and technology exploration presented in ISCA 2022.
 </p>
 <br>
 </div>
 
-<div>
-<CENTER>
+<div class="center">
 <p><b>Agenda</b></p>
 
 <ul>
@@ -140,8 +132,7 @@ Our tutorial will cover microarchitecture, temperature, and technology explorati
 </ul>
 </div>
 
-<div>
-<CENTER>
+<div class="center">
 <p><b>Organizers & Speakers</b>
 <ul>
 <li> <a href="https://hpcs.snu.ac.kr/~jangwoo/">Jangwoo Kim</a>(SNU) <br>
@@ -160,9 +151,8 @@ Our tutorial will cover microarchitecture, temperature, and technology explorati
 <CENTER>
 <div style="max-width: 75ch; margin: -20px 0 0 0; font: 20px Helvetica, Sans-Serif; line-height: 24px; float: center">
  <img src="images/micro_logo.jpg" width=100 alt="logo" id="pic"/>
-Our tutorial will be held in Chicago on Sunday, October 2, 2022, prior to the 55th IEEE/ACM International Symposium on Microarchitecture (MICRO).</body>
+Our tutorial will be held in Chicago on Sunday, October 2, 2022, prior to the 55th IEEE/ACM International Symposium on Microarchitecture (MICRO).
 </div>
-</span>
 
 <br><br><br><br>
 <CENTER>
